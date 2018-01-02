@@ -1,0 +1,342 @@
+/*
+Color Scheme
+#232323 background, code
+#0B294A decoration
+#397593 link
+#A48F69 decoration, hover
+#962020 decoration
+#FFFFFF background
+
+
+
+*/
+
+/* GENERAL */
+html, body {
+  font-size   : 1em;
+  line-height : 1.5em;
+  font-family : 'PT Sans', sans-serif;
+  font-weight : 400;
+  background  : #ffffff;
+  color       : #232323;
+}
+
+html {
+  height : 100%;
+}
+
+body {
+  padding : 2em 2em 1em 2em;
+}
+
+p, hr, h4, h5, h6 {
+  margin-top    : 0.9em;
+  margin-bottom : 0.9em;
+}
+
+
+strong {
+  font-weight : 700;
+}
+
+a {
+  font-weight     : 600;
+  text-decoration : none;
+  color           : #397593;
+}
+
+a:hover {
+  color : #A48F69;
+}
+
+img, iframe {
+  max-width    : 100%;
+  display      : block;
+  margin-left  : auto;
+  margin-right : auto;
+}
+
+
+/* HEADER */
+header {
+  padding      : 1em 2em 2em 2em;
+  top          : 0;
+  left         : 0;
+  text-align   : center;
+  max-width    : 60em;
+  margin-left  : auto;
+  margin-right : auto;
+}
+
+header h1 {
+  font-size     : 1.9em;
+  margin-top    : 0.6em;
+  margin-bottom : 0.6em;
+  border        : none;
+}
+
+header h1 a {
+  color          : #232323;
+  text-transform : uppercase;
+}  
+
+header h1 a:hover {
+  color : #232323;
+}
+
+
+/* CONTENT */
+#content {
+  display : block;
+  width   : 100%;
+}
+
+article {
+  border-bottom : 0.1em #A48F69 solid;
+  padding       : 1em 3em 1.5em 3em;
+  margin-left   : auto;
+  margin-right  : auto;
+  text-align    : justify;
+  max-width     : 60em;
+  background    : #ffffff;
+}
+
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family : 'Oswald', sans-serif;
+  font-weight : 500 !important;
+  word-break  : normal;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+  font-weight : 500;
+}
+
+h1 {
+  font-size      : 2em;
+  line-height    : 1.1em;
+  margin-top     : 0.6em;
+  margin-bottom  : 0.6em;
+  padding-bottom : 0.4em;
+  padding-top    : 0.4em;
+}
+
+h2 {
+  font-size     : 1.6em;
+  line-height   : 1.2em;
+  margin-top    : 1.4em;
+  margin-bottom : 1em;
+}
+
+h3 {
+  font-size     : 1.4em;
+  line-height   : 1.3em;
+  margin-top    : 0.8em;
+  margin-bottom : 0.8em;
+}
+
+h4 {
+  font-size : 1.3em;
+}
+
+h5 {
+  font-size : 1.2em;
+}
+
+h6 {
+  font-size : 1.1em;
+}
+
+
+/* CODE */
+code {
+  color       : #FFFFFF;
+  background  : #232323;
+  line-height : 1.3em;
+  padding     : 0.1em;
+}
+
+pre {
+  background : #232323;
+  margin     : 1em;
+  padding    : 0.4em;
+  
+  /* 
+  Uncomment overflow-x and comment the rest to
+  enable scrolling instead of code wrapping
+  */
+
+  /*overflow-x : auto;*/
+  word-wrap   : break-word;
+  white-space : pre; 
+}
+
+
+/* MENU */
+span.top-menu-item{
+  padding-left  : 0.5em;
+  padding-right : 0.5em;
+}
+
+span.top-menu-item a{
+  color          : #232323;
+  text-transform : uppercase;
+}
+span.top-menu-item a:hover{
+  color          : #232323;
+  border-bottom  : 0.3em #A48F69 solid;
+  padding-bottom : 0.3em;
+}
+
+
+/* POSTS */
+article span.post-stamp {
+  color:#232323;     
+}
+
+section.post{
+  margin-left  : auto;
+  margin-right : auto;
+  text-align   : left;
+  max-width    : 60em;
+}
+
+h1.post-title {
+  margin-top :0.35em;
+  color      : #962020;
+}
+
+h3.post-title {
+  margin-top     : 0.4em;
+  padding-bottom : 0.9em;
+  color          : #232323;
+}
+
+.post-title .feature-star {
+  font-size : 0.9em;
+}
+
+.separator, .taglist, .feature-star {
+  color : #A48F69;
+}
+
+span.tag-prefix{
+  color       : #962020;
+  font-size   : 0.5em;
+  font-family : 'PT Sans', sans-serif;
+  font-weight : 700 !important;
+}
+
+.taglist a {
+  color          : #962020;
+  font-size      : 0.5em;
+  font-family    : 'PT Sans', sans-serif;
+  font-weight    : 700 !important;
+  text-transform : uppercase;
+}
+
+nav.pagination{
+  margin-left  : auto;
+  margin-right : auto;
+  text-align   : center;
+  max-width    : 30em;
+}
+
+
+/* FOOTER */
+footer {
+  padding     : 1em 0em 2.5em 0em;
+  font-size   : 0.8em;
+  line-height : 1.5em;
+  color       : #232323;
+}
+
+
+/* MISC */
+.hljs{
+  /* prevents the scrollbar from overlapping
+     with the bottom of the pre box*/
+  overflow: unset;
+}
+
+
+/* SCREENS */
+
+/* Large */
+@media only screen and (min-width: 1281px) {
+  html, body {
+    font-size : 1em;
+  } 
+}
+
+/* Small */
+@media only screen and (max-width: 800px) { 
+  body {
+    padding   : 0;
+    font-size : 0.75em;
+  }
+
+  header {
+    padding-bottom : 1em;
+  }
+
+  article {
+    padding    : 1em 1em 1.5em 1em;
+    word-wrap  : break-word;
+    word-break : break-all;
+    text-align : left;
+  }
+
+  pre{
+    line-height : 1em;
+    /* scrolling instead of wrapping*/
+    overflow-x  : auto;
+    white-space : pre;
+  }
+
+  footer {
+    padding : 0 2.5em 2em 2.5em;
+  }
+
+  ul, ol {
+    margin-left  : 1em;
+    padding-left : 1em;
+  }
+}
+
+/* Tiny */
+@media only screen and (max-width: 320px) { 
+  body {
+    padding   : 0;
+    font-size : 0.6em;
+  }
+
+  header {
+    padding : 1.2em 1.2em 0.6em 1.2em;
+  }
+
+  article {
+    padding    : 0.5em 0.5em 1em 0.5em;
+    word-wrap  : break-word;
+    word-break : break-all;
+    text-align : left;
+  }
+
+  pre{
+    line-height    : 1em;
+    margin         : 0.8em;
+    /* scrolling instead of wrapping*/
+    overflow-x     : auto;
+    white-space    : pre;
+  }
+
+  footer {
+    padding : 0 1.5em 1.2em 1.5em;
+  }
+
+  ul, ol {
+    margin-left  : 1em;
+    padding-left : 1em;
+  }
+}
