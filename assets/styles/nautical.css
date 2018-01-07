@@ -69,19 +69,20 @@ header {
 }
 
 header h1 {
-  font-size     : 1.9em;
+  font-family: 'Unica One', cursive;
+  font-size     : 3em;
   margin-top    : 0.6em;
   margin-bottom : 0.6em;
   border        : none;
 }
 
 header h1 a {
-  color          : #232323;
+  color          : #962020;
   text-transform : uppercase;
 }  
 
 header h1 a:hover {
-  color : #232323;
+  color : #962020;
 }
 
 
@@ -114,62 +115,81 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 }
 
 h1 {
-  font-size      : 2em;
+  color          : #962020;
+  font-size      : 1.8em;
   line-height    : 1.1em;
-  margin-top     : 0.6em;
+  margin-top     : 1.0em;
   margin-bottom  : 0.6em;
-  padding-bottom : 0.4em;
-  padding-top    : 0.4em;
 }
 
 h2 {
-  font-size     : 1.6em;
-  line-height   : 1.2em;
-  margin-top    : 1.4em;
-  margin-bottom : 1em;
+  font-size     : 1.4em;
+  line-height   : 1.1em;
+  margin-top    : 1.0em;
+  margin-bottom : 0.6em;
 }
 
 h3 {
-  font-size     : 1.4em;
-  line-height   : 1.3em;
-  margin-top    : 0.8em;
-  margin-bottom : 0.8em;
+  font-size     : 1.2em;
+  line-height   : 1.1em;
+  margin-top    : 1.0em;
+  margin-bottom : 0.6em;
 }
 
 h4 {
-  font-size : 1.3em;
-}
-
-h5 {
-  font-size : 1.2em;
-}
-
-h6 {
   font-size : 1.1em;
 }
 
+h5 {
+  font-size : 1.0em;
+}
+
+h6 {
+  font-size : 0.9em;
+}
+
+
+/* TABLE */
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border : thin solid #838383;
+  padding: 0.4em;
+}
+
+thead {
+  border-bottom: medium solid #397593;
+}
+
+tr{
+  font-size: 0.9em;
+}
 
 /* CODE */
 code {
-  color       : #FFFFFF;
-  background  : #232323;
-  line-height : 1.3em;
-  padding     : 0.1em;
+  font-family   : 'CourierCodeRoman';
+  font-size     : 0.8em;
+  color         : #ebdbb2;
+  background    : #0e0f11;
+  line-height   : 1.3em;
+  padding       : 0.2em 0.3em 0.2em 0.3em;
+  border-radius : 3px;
 }
 
 pre {
-  background : #232323;
-  margin     : 1em;
-  padding    : 0.4em;
-  
-  /* 
-  Uncomment overflow-x and comment the rest to
-  enable scrolling instead of code wrapping
-  */
+  background    : #0e0f11;
+  margin        : 1em;
+  padding       : 0.4em;
+  border-radius : 5px;
+  overflow-x    : auto;
+}
 
-  /*overflow-x : auto;*/
-  word-wrap   : break-word;
-  white-space : pre; 
+.hljs{
+  background     : #0e0f11;
+  border: none;
+  overflow: unset;
 }
 
 
@@ -203,8 +223,9 @@ section.post{
 }
 
 h1.post-title {
-  margin-top :0.35em;
-  color      : #962020;
+  font-size  : 2em;
+  margin-top : 0.35em;
+  color      : #0B294A;
 }
 
 h3.post-title {
@@ -246,18 +267,14 @@ nav.pagination{
 
 /* FOOTER */
 footer {
+  margin-left  : auto;
+  margin-right : auto;
+  text-align   : center;
+  max-width    : 60em;
   padding     : 1em 0em 2.5em 0em;
   font-size   : 0.8em;
   line-height : 1.5em;
   color       : #232323;
-}
-
-
-/* MISC */
-.hljs{
-  /* prevents the scrollbar from overlapping
-     with the bottom of the pre box*/
-  overflow: unset;
 }
 
 
@@ -290,9 +307,6 @@ footer {
 
   pre{
     line-height : 1em;
-    /* scrolling instead of wrapping*/
-    overflow-x  : auto;
-    white-space : pre;
   }
 
   footer {
@@ -326,9 +340,6 @@ footer {
   pre{
     line-height    : 1em;
     margin         : 0.8em;
-    /* scrolling instead of wrapping*/
-    overflow-x     : auto;
-    white-space    : pre;
   }
 
   footer {

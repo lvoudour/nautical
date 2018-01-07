@@ -9,10 +9,10 @@
     <title>{{meta_title}}</title>
     <link rel="shortcut icon" href="{{@blog.logo}}"/>
     {{! Styles }}
-    <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500|Unica+One|PT+Sans|PT+Mono" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/courier-code" type="text/css"/> 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/gruvbox-dark.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset '/styles/nautical.css'}}">
     {{! Responsive Meta Tags }}
     <meta name="HandheldFriendly" content="True" />
@@ -51,14 +51,14 @@
       <section id="footer-message">
         &copy; {{date format='YYYY'}} {{@blog.title}}. All rights reserved. Powered by 
         <a href="http://ghost.org" target="_blank">Ghost</a>. 
-        Nautical theme by 
-        <a href="http://lvoudouris.com" target="_blank">Lymperis Voudouris</a>.
+        <a href="https://github.com/lvoudour/nautical" target="_blank">Nautical</a> theme by Lymperis Voudouris.
       </section>
     </footer>
   
     {{ghost_foot}}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/vhdl.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 
