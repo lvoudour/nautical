@@ -169,7 +169,7 @@ tr{
 
 /* CODE */
 code {
-  font-family   : 'CourierCodeRoman';
+  font-family   : 'Roboto Mono', monospace;
   font-size     : 0.8em;
   color         : #ebdbb2;
   background    : #0e0f11;
